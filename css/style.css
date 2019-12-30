@@ -1,3 +1,106 @@
-p {
-	color: red;
+html{
+	-webkit-font-smoothing: antialiased; 
+	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
+html, body{ 
+	max-width: 100%;
+	overflow: hidden; 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;  
+	font-family: georgia, serif;
+}
+
+#view{
+  	overflow-y: scroll;
+  	overflow-x: hidden;
+  	padding-right: 17px; 
+	vertical-align:middle;
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+
+#home{ /*If I want to use an image for the top secion, place it here, if solid color, place it div.landingtext*/
+	background-image:url("http://placekitten.com/800/800");
+	vertical-align:middle;
+	display:table;
+  	background-color:#000;
+  	transform:scale(1);
+}
+.landingtext{
+	display:table-cell;
+	text-align:right;
+	line-height: 1.5em; 
+	vertical-align:middle;
+	width:100%;
+	height:100%;
+	padding:0 2em;
+}
+div.landingtext{
+
+}
+.landingtext h{
+	letter-spacing: .2em;
+	vertical-align:middle;
+	font-size: 3em; 
+	line-height: 1.4em;
+	color:#FCF9DE;
+	font-weight: 900;
+}
+.landingtext h1{
+	font-size: 40px; 
+	color: blue;
+}
+
+
+.background{
+	background-position: center; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+
+.slide{
+	vertical-align:middle;
+	display:inline-block;
+	width:100vw;
+	height:100vh;
+}
+
+.slide-table{
+	display: grid;
+	background-color:#E1E9C7;
+}
+
+.slide-2{
+	background-color: cyan;
+}
+.slide-3{
+	background-color: green;
+}
+
+.article{
+	margin: auto;
+	display: table-cell;
+	vertical-align:middle;
+	width:90vw;
+	height:100%;
+	text-align:left;
+	line-height: 2em; 
+	padding: 0 1em;
+}
+.article p{
+	background-color:#e15e35;
+	text-align:justify;
+	padding:4em;
+	opacity:0.6;
+	letter-spacing: 0.2em;
+	transition: all 0.5s ease;
+}
+.article p:hover{
+	opacity:1;
+	transform: scale(1.05);
+	color:#C8D6C7;
+}
+
